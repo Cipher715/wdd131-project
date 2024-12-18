@@ -14,8 +14,14 @@
     .recipeList article {
         margin-bottom: 0;
     }
+
     .recipe-ingredients {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 90%;
+    }
+    
+    .recipe-detail img {
+        width: 300px;
     }
 }
