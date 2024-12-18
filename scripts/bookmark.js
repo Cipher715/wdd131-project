@@ -73,6 +73,7 @@ class Bookmark {
             let img = document.createElement('img');
             img.setAttribute('src', `${recipe.strMealThumb}`);
             img.setAttribute('alt', `${recipe.strMeal}`);
+            img.setAttribute('loading', 'lazy');
             img.className = 'recipeImage';
             img.id = `${recipe.idMeal}`;
             article.appendChild(h4);
