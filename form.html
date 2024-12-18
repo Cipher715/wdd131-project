@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Final Project | Request</title>
+    <meta name="description" content="WDD 131 - Final Project Request Page">
+    <meta name="author" content="Atsushi Karino">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/recipe-logo.webp" alt="logo">
+            <a href="/index.html"> Recipe Library</a>
+        </div>
+        <nav>
+          <a href="/index.html">Home</a>
+          <a href="/directory.html">Directory</a>
+          <a href="/bookmark.html">Bookmark</a>
+          <a href="/form.html">Request</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Request Form</h2>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label for="newRecipe">What recipe do you want us to add?</label>
+                <input type="text" id="newRecipe" name="newRecipe" required>
+                <label for="instructions">Please provide brief instructions.</label>
+                <textarea name="instructions" id="instructions" cols="30" rows="10" required></textarea>
+                <label>Overall Rating<br>How do you like this website?</label>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5" required>
+                    <label for="star-a"></label>
+                    <input type="radio" name="stars" id="star-b" value="4">
+                    <label for="star-b"></label>
+                    <input type="radio" name="stars" id="star-c" value="3">
+                    <label for="star-c"></label>
+                    <input type="radio" name="stars" id="star-d" value="2">
+                    <label for="star-d"></label>
+                    <input type="radio" name="stars" id="star-e" value="1">
+                    <label for="star-e"></label>
+                </div>
+                <input type="submit" value="Post Request">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Atsushi Karino | Tokyo Japan</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>

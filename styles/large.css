@@ -1,0 +1,21 @@
+@media screen and (min-width: 800px){
+    nav a {
+        font-size: 1.3rem;
+    }
+
+    .recipeList {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: .5rem;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .recipeList article {
+        margin-bottom: 0;
+    }
+    .recipe-ingredients {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
